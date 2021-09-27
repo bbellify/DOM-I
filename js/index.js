@@ -56,4 +56,11 @@ navFeatures.textContent = siteContent.nav["nav-item-4"];
 navAbout.textContent = siteContent.nav["nav-item-5"];
 navContact.textContent = siteContent.nav["nav-item-6"];
 
+// cta
+const ctaH1 = document.querySelector('.cta-text h1');
+const ctaButton = document.querySelector('.cta-text button');
+const ctaImg = document.querySelector('#cta-img');
+ctaH1.textContent = siteContent.cta.h1;
+ctaButton.textContent = siteContent.cta.button;
+ctaImg.src = siteContent.cta["img-src"];
 
