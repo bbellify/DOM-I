@@ -42,7 +42,6 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
 // Nav
-const nav = document.querySelector('nav');
 const navServices = document.querySelector('nav a:nth-child(1)');
 const navProduct = document.querySelector('nav a:nth-child(2)');
 const navVision = document.querySelector('nav a:nth-child(3)');
@@ -55,6 +54,19 @@ navVision.textContent = siteContent.nav["nav-item-3"];
 navFeatures.textContent = siteContent.nav["nav-item-4"];
 navAbout.textContent = siteContent.nav["nav-item-5"];
 navContact.textContent = siteContent.nav["nav-item-6"];
+
+const nav = document.querySelector('nav');
+const newNav1 = document.createElement('a');
+const newNav2 = document.createElement('a');
+newNav1.textContent = 'last Nav';
+newNav2.textContent = 'first Nav';
+nav.appendChild(newNav1);
+nav.prepend(newNav2);
+
+const navText = document.querySelectorAll('nav a');
+navText.forEach(a => a.style.color = 'green');
+
+
 
 // cta
 const ctaH1 = document.querySelector('.cta-text h1');
@@ -105,5 +117,8 @@ address.textContent = siteContent['contact']['address'];
 phone.textContent = siteContent['contact']['phone'];
 email.textContent = siteContent['contact']['email'];
 
+// footer
+const footer = document.querySelector('footer p');
+footer.textContent = siteContent['footer']['copyright'];
 
 
