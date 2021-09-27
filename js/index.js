@@ -96,3 +96,14 @@ visionText.textContent = siteContent['main-content']['vision-content'];
 
 
 // contact section
+const contactH4 = document.querySelector('.contact h4');
+const address = document.querySelector('.contact p:nth-child(2)');
+const phone = document.querySelector('.contact p:nth-child(3)');
+const email = document.querySelector('.contact p:nth-child(4)');
+contactH4.textContent = siteContent['contact']['contact-h4'];
+address.textContent = siteContent['contact']['address'];
+phone.textContent = siteContent['contact']['phone'];
+email.textContent = siteContent['contact']['email'];
+
+
+
