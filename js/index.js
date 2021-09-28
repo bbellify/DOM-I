@@ -72,7 +72,9 @@ navText.forEach(a => a.style.color = 'green');
 const ctaH1 = document.querySelector('.cta-text h1');
 const ctaButton = document.querySelector('.cta-text button');
 const ctaImg = document.querySelector('#cta-img');
-ctaH1.textContent = siteContent.cta.h1;
+
+// ctaH1.textContent = siteContent.cta.h1;
+ctaH1.innerHTML = 'DOM<br>is<br>awesome';
 ctaButton.textContent = siteContent.cta.button;
 ctaImg.src = siteContent.cta["img-src"];
 
@@ -113,7 +115,7 @@ const address = document.querySelector('.contact p:nth-child(2)');
 const phone = document.querySelector('.contact p:nth-child(3)');
 const email = document.querySelector('.contact p:nth-child(4)');
 contactH4.textContent = siteContent['contact']['contact-h4'];
-address.textContent = siteContent['contact']['address'];
+address.innerHTML = '123 Way 456 Street<br>Somewhere, USA';
 phone.textContent = siteContent['contact']['phone'];
 email.textContent = siteContent['contact']['email'];
 
